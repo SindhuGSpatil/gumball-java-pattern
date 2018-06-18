@@ -8,11 +8,19 @@ public class SoldState implements State {
         this.gumballMachine = gumballMachine;
     }
        
-	public void insertQuarter() {
+	public void insertCoins(int coin) {
 		System.out.println("Please wait, we're already giving you a gumball");
 	}
  
-	public void ejectQuarter() {
+	public void insertCoins(int coin1, int coin2) {
+		System.out.println("Please wait, we're already giving you a gumball");
+	}
+	
+	public void insertCoins(int[] coins) {
+		System.out.println("Please wait, we're already giving you a gumball");
+	}
+	
+	public void ejectCoin() {
 		System.out.println("Sorry, you already turned the crank");
 	}
  

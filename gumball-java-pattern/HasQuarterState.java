@@ -9,12 +9,20 @@ public class HasQuarterState implements State {
 		this.gumballMachine = gumballMachine;
 	}
   
-	public void insertQuarter() {
+	public void insertCoins(int coin) {
 		System.out.println("You can't insert another quarter");
 	}
  
-	public void ejectQuarter() {
-		System.out.println("Quarter returned");
+	public void insertCoins(int coin1, int coin2) {
+		System.out.println("You can't insert more than two quarters");
+	}
+	
+	public void insertCoins(int[] coins) {
+		System.out.println("You can't insert more than 50 cents");
+	}
+	
+	public void ejectCoin() {
+		System.out.println("Coin(s) returned");
 		gumballMachine.setState(gumballMachine.getNoQuarterState());
 	}
  
